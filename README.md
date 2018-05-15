@@ -158,3 +158,11 @@ Plotly.js was used to build interactive charts for this dashboard. The endpoints
 * gauge code was updated to account for values ranging from 0 - 9.
 
 * used `Plotly.restyle` to update the chart when a new sample is selected
+
+##### heroku port set-up
+
+* only need to do one of these:
+
+1. `app.run(debug=True, port=33507)` which is a reserved port for Flask apps or you can add the port to the heroku ENV with `heroku config:add PORT=33507`
+
+2. An alternate option is using `port = int(os.environ.get('PORT', 33507))`. This gets the value of PORT from the environment if it is set, otherwise it will use 33507. 
