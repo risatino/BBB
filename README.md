@@ -1,5 +1,5 @@
 #### Belly Button Biodiversity app
-##### Flask API
+#### Flask API
 
 A Flask API was used to present the given dataset and serve my HTML/CSS/JS files required for this dashboard landing page. A sqlite database was included, and a bootstrap grid system was utilized.
 
@@ -100,7 +100,7 @@ A Flask API was used to present the given dataset and serve my HTML/CSS/JS files
 ```
 
 ---
-##### Plotly.js
+#### Plotly.js
 
 Plotly.js was used to build interactive charts for this dashboard. The endpoints created pulled data through JS callbacks. Plotly uses D3 components which the bubble, pie, and gauge plots were created with. 
 
@@ -151,7 +151,7 @@ Plotly.js was used to build interactive charts for this dashboard. The endpoints
 - [ ] WIP: I started to deploy this Flask app to Heroku which is why I included a Procfile, but did not complete this task yet.
 
 ---
-##### optional gauge chart
+#### optional gauge chart
 
 * a gauge Chart was adapted from [https://plot.ly/javascript/gauge-charts/](https://plot.ly/javascript/gauge-charts/) to plot the Weekly Washing Frequency obtained from the route `/wfreq/<sample>`
 
@@ -159,9 +159,9 @@ Plotly.js was used to build interactive charts for this dashboard. The endpoints
 
 * used `Plotly.restyle` to update the chart when a new sample is selected
 
-##### heroku port set-up
+#### heroku port set-up
 
-* only need to do one of these:
+Steps for heroku + flask environment
 
 1. `app.run(debug=True, port=33507)` which is a reserved port for Flask apps or you can add the port to the heroku ENV with `heroku config:add PORT=33507`
 
